@@ -1,0 +1,323 @@
+.body
+{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0;
+}
+
+.header
+{
+    display: flex;
+    justify-content: center;
+    
+    padding-top: 35px;
+
+    background: url(../img/bg.png) 100% no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 85%;
+    max-width: 1200px;
+}
+
+.top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.header__menu
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    width: 50%;
+    height: 50px;
+
+    border-bottom: 1px solid #D1D3DE;
+    box-sizing: border-box;
+}
+
+.header__menu-item
+{
+    font-size: 1.25em;
+    color: #FFF;
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+
+    cursor: pointer;
+}
+
+.header__menu-item:hover 
+{
+    border-bottom: 6px solid #F45E1F;
+}
+
+.btn
+{
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #FFF;
+
+    height: 45px;
+    width: 162px;
+
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 45px;
+    
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    color: #F45E1F;
+
+    background-color: #FFF;
+}
+
+.header__text
+
+{
+    color: #FFF;
+
+    width:  80%;
+    margin-bottom: 50px;
+}
+
+.header__text-title
+{
+    font-size: 5.42em;
+    font-weight: 700;
+
+    margin: 0;
+}
+
+.header__text-paragraph
+{
+    font-size: 1.25em;
+
+    width: 47%;
+}
+
+.header__btns
+{
+    display: flex ;
+    justify-content: space-between;
+    
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.location
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-icon
+{
+    margin-right: 8px;
+}
+
+.header__learnMore
+{
+    display: flex;
+    align-items: center;
+}
+
+.header__learnMore-text
+{
+    font-size: 1em;
+    color: #FFF;
+    text-transform: uppercase;
+
+    margin-right: 25px;
+}
+
+.header__learnMore-lineWrap
+{
+    width: 40%;
+    height: 50px;
+    
+}
+
+.header__learnMore-line
+{
+    width: 100%;
+    height: 25px;
+
+    border-bottom: 1px solid #FFF;
+}
+
+.header__learnMore-circle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #FFF;
+    border-radius: 50px;
+}
+
+.header__learnMore-circle:hover
+{
+    background-color: #FFF;
+}
+
+.header__learnMore-link
+{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.header__learnMore-link:hover
+{
+    color: #F45E1F;
+}
+
+.header__scroll
+{
+    font-size: 12px;
+    color: #B4B4B4;
+    text-transform: uppercase;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+
+    background-color: #fafbfd;
+
+    cursor: pointer;
+}
+
+.section
+{
+    /* height: 100vh; */
+}
+
+.services
+{
+    display: flex;
+    justify-content: center;
+
+    background-color: #fafbfd;
+}
+
+.services-inner
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 600px;
+    width: 60%;
+    max-width: 800px;
+    min-width: 700px;
+}
+
+.services__box
+{
+    height:330px;
+    width: 330px;
+    padding: 50px;
+    
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.house
+{
+    background-color: #ffffff;;
+}
+
+.commercial
+{
+    background-color: #273164;
+}
+
+.services__box-booking
+{
+    font-size: 1.08em;
+    color: #F45E1F;
+    text-decoration: underline;
+    opacity: 0.6;
+
+}
+
+.services__box-booking:hover
+{
+    opacity: 1;
+}
+
+.services__box-title
+{
+    font-size: 1.7em;
+}
+
+..services__box-text
+{
+    font-size: 1.16em;
+    line-height: 1.571;
+}
+
+.house .services__box-title
+{
+    color: #273164;
+}
+
+.house .services__box-text
+{
+    color: #c7c7c7;
+}
+
+.commercial .services__box-title,
+.commercial .services__box-text
+{
+    color: #ebecef;
+}
+
+
+.Sparcle_provides_a_professional_house_cleaning_ {
+    font-size: 14px;
+    font-family: "AvenirNextLTPro";
+    color: rgb(180, 180, 180);
+    line-height: 1.571;
+    text-align: left;
+    position: absolute;
+    left: 485.134px;
+    top: 1289.25px;
+    width: 246px;
+    height: 78px;
+    z-index: 53;
+  }
+  

@@ -236,7 +236,7 @@
 .services-inner
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     height: 600px;
@@ -307,17 +307,121 @@
 }
 
 
-.Sparcle_provides_a_professional_house_cleaning_ {
-    font-size: 14px;
-    font-family: "AvenirNextLTPro";
-    color: rgb(180, 180, 180);
-    line-height: 1.571;
-    text-align: left;
+.about
+{
+    position: relative;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-inner
+{
+    width: 60%;
+}
+
+.about__title
+{
+    font-size: 2.5em;
+    color: #273164;
+}
+
+.about__text
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__text-item
+{
+    width: 45%;
+}
+
+.about__paragraph
+{
+    font-size: 1.16em;
+    line-height: 1.714;
+    color: #c1c1c1;
+}
+
+.underline-text
+{
+    text-decoration: underline;
+}
+
+.bold-text
+{
+    font-weight: bold;
+}
+
+.bg-small
+{
     position: absolute;
-    left: 485.134px;
-    top: 1289.25px;
-    width: 246px;
-    height: 78px;
-    z-index: 53;
-  }
-  
+    top: 450px;
+    left: 250px;
+    width: 30%;
+    z-index: 555;
+}
+
+.dots
+{
+    position: absolute;
+    top: 680px;
+    left: 480px;
+    width: 20%;
+    z-index: 554;
+}
+
+.philosophy
+{
+    display: flex;
+    padding: 350px 0 0 250px;
+
+    position: relative;
+    height: 750px;
+    
+    background-color: #f6f7fb;
+    box-sizing: border-box;
+}
+
+.philosophy-inner
+{
+    width: 400px;
+}
+
+.philosophy_subtitle
+{
+    font-size: 1.08em;
+    text-transform: uppercase;
+    color: #F45E1F;
+}
+
+.philosophy__guarantees-item
+{
+    display: flex;
+    align-items: center;
+}
+
+.check-icon
+{
+    margin-right: 35px;
+}
+
+.guarantee
+{
+    font-size: 1.33em;
+    font-weight: bold;
+    line-height: 2.188;
+    color: #273164;
+}
+
+.hand
+{
+    position: absolute;
+    right: 0;
+    top: 200px;
+    width: 40%;
+}

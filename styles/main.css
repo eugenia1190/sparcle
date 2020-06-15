@@ -77,23 +77,59 @@
 {
     font-size: 1.25em;
     font-weight: bold;
-    color: #FFF;
+
 
     height: 45px;
     width: 162px;
 
     background-color: transparent;
-    border: 1px solid #FFF;
+
     border-radius: 45px;
+    outline: none;
     
     cursor: pointer;
 }
 
-.btn:hover
+/* .btn:hover
 {
     color: #F45E1F;
 
     background-color: #FFF;
+} */
+
+.header__request,
+.get-started,
+.location
+{
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+.header__request:hover,
+.get-started:hover,
+.location:hover
+{
+    color: #F45E1F;
+
+    background-color: #FFF;
+}
+
+.residentialBtn,
+.commercialBtn
+{
+    color: #273164;
+    border: 1px solid #273164;
+}
+
+.residentialBtn:hover,
+.commercialBtn:hover,
+.counter__decrement:hover,
+.counter__increment:hover
+{
+    color: #F45E1F;
+    border-color: #F45E1F;
+
+    background-color:#fff9f6;
 }
 
 .header__text
@@ -205,6 +241,7 @@
     font-size: 12px;
     color: #B4B4B4;
     text-transform: uppercase;
+    text-decoration: none;
     
     display: flex;
     align-items: center;
@@ -279,12 +316,13 @@
     opacity: 1;
 }
 
-.services__box-title
+.services__box-title,
+.booking__box-title
 {
     font-size: 1.7em;
 }
 
-..services__box-text
+.services__box-text
 {
     font-size: 1.16em;
     line-height: 1.571;
@@ -425,3 +463,363 @@
     top: 200px;
     width: 40%;
 }
+
+.booking
+{
+    display: flex;
+    height: 770px;
+    justify-content: center;
+}
+
+.booking-inner
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+    /* height: 600px; */
+    /* width: 60%;
+    max-width: 800px;
+    min-width: 700px; */
+}
+
+.booking__box
+{
+    width: 500px;
+    height: 500px;
+
+    box-sizing: border-box;
+}
+.booking__subtitle
+{
+    font-size: 1.16em;
+    color: #F45E1F;
+}
+
+.booking__box-text
+{
+    font-size: 1.16em;
+    line-height: 1.714;
+    color: #273164;
+}
+
+.selection
+{
+    padding-right: 150px;
+
+}
+
+.typeCleaningBtns
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.countContainer
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.bathrooms,
+.bedrooms
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter__name
+{
+    font-size: 1.16em;
+    font-weight: bold;
+    color: #F45E1F;
+
+    margin-bottom: 25px;
+
+}
+
+.counter
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+
+.counter__decrement,
+.counter__increment
+{
+    color: #c1c1c1;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    border: 1px solid #c1c1c1;
+    background-color: #FFF;
+    outline: none;
+    cursor: pointer;
+}
+
+.counter__value
+{
+    font-size: 1.16em;
+    font-weight: bold;
+    color: #111;
+}
+
+.subtotal
+{
+    background-color: #273164;
+    padding: 50px;
+}
+
+.hours
+{
+    color: #F45E1F;
+}
+
+.selection .booking__box-title
+{
+    color: #273164;
+}
+
+.subtotal .booking__box-title,
+.subtotal .booking__box-text
+{
+    color: #FFF;
+}
+
+.booking_box-form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.input
+{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.16em;
+    color: #FFF;
+
+    width: 360px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid  #FFF;
+    outline: none;
+}
+
+
+.input::placeholder
+{
+    color: #FFF;
+}
+
+.input:focus::placeholder
+{
+    opacity: 0;
+}
+
+.booking__box-link
+{
+    font-size: 1.66em;
+    font-weight: bold;
+    color: #F45E1F;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.booking__box-link:hover{
+    text-decoration: underline;
+}
+
+.testimonials
+{
+    display: flex;
+    justify-content: center;
+    height: 1075px;
+    background-color: #f6f7fb;
+
+}
+
+.testimonials-inner
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.testimonialsContainer
+{
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials__title
+{
+    font-size: 2.5em;
+    color: #273164;
+
+    padding-top: 160px;
+    margin-bottom: 68px;
+    box-sizing: border-box;
+}
+
+
+
+.testimonials__item
+{
+    width: 30%;
+    height: 400px;
+    padding: 45px;
+    margin-bottom: 150px;
+    box-sizing: border-box;
+
+    background-color: #FFF;
+}
+
+.testimonials__item-text
+{
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #273164;
+}
+
+.testimonials__item-name
+{
+    font-size: 1em;
+    font-weight: bold;
+    color: #F45E1F;
+
+}
+
+.testimonials__item-city
+{
+    font-size: 1em;
+    font-weight: bold;
+    color: #B4B4B4;
+}
+
+.Kristina_Rašić_Samobor {
+    font-size: 15px;
+    font-family: "AvenirNextLTPro";
+    color: rgb(244, 94, 31);
+    line-height: 1.333;
+    position: absolute;
+    left: 861.134px;
+    top: 4212.886px;
+    z-index: 169;
+  }
+  
+
+.testimonials__comments
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.testimonials__comments-title
+{
+    font-size: 2.08em;
+    color: #273164;
+}
+
+.testimonials__comments-btns
+{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+
+
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 530px;
+}
+.footer-inner
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 75%;
+    padding-top: 160px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.footer__column
+{
+    width: 17%;
+}
+
+
+.footer__column-title
+{
+    font-size: 1.83.em;
+    font-weight: bold;
+    color: #273164;
+}
+
+.footer__column-paragraph
+{
+    font-size: 1.16em;
+    font-weight: bold;
+    line-height: 2.5;
+    color: #676F92;
+}
+
+.email
+{
+    color: #F45E1F;
+    text-decoration: underline;
+}
+
+.socials
+{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+}
+
+.socials__item
+{
+    width: 30px;
+}
+
+.copyright
+{
+    font-size: 1.16em;
+    line-height: 2.5;
+    color: #c1c1c1;
+
+    display: flex;
+    justify-content: flex-start;
+    width: 75%;
+    border-top: 1px solid #c1c1c1;
+}
+
+.Borongajska_cesta_bb__10000_Zagreb_01_23_95_313 {
+    font-size: 14px;
+    font-family: "AvenirNextLTPro";
+    color: rgb(103, 111, 146);
+    line-height: 2.5;
+    position: absolute;
+    left: 1180px;
+    top: 4964.75px;
+    z-index: 200;
+  }
+  

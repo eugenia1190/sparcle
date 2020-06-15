@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/main.css" >
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <title>Sparcle</title>
+    <title>Sparcle - Professional Cleaning Services</title>
 </head>
 <body class="body">
     <header class="header">
@@ -13,11 +13,11 @@
             <div class="top">
                 <img src="img/sparcleLogo.png" alt="logo" class="header__logo">
                 <nav class="header__menu">
-                    <a href="#" class="header__menu-item">Our services</a>
-                    <a href="#" class="header__menu-item">Why hire us</a>
-                    <a href="#" class="header__menu-item">Booking</a>
-                    <a href="#" class="header__menu-item">Testimonials</a>
-                    <a href="#" class="header__menu-item">Contact</a>
+                    <a href="#services" class="header__menu-item">Our services</a>
+                    <a href="#about" class="header__menu-item">Why hire us</a>
+                    <a href="#booking" class="header__menu-item">Booking</a>
+                    <a href="#testimonials" class="header__menu-item">Testimonials</a>
+                    <a href="#footer" class="header__menu-item">Contact</a>
                 </nav>
                 <button class="header__request btn">Request a Quote</button>
             </div>
@@ -28,8 +28,8 @@
             </div>
 
             <div class="header__btns">
-                <button class="btn">Get started</button>
-                <button class="location btn"><img src="img/location-icon.png" alt="location" class="location-icon">Locations</button>
+                <button class="get-started btn">Get started</button>
+                <button class="location btn" id="location-btn"><img src="img/location-icon.png" alt="location" class="location-icon" id="location-icon">Locations</button>
             </div>
 
             <div class="header__learnMore">
@@ -37,16 +37,16 @@
                 <div class="header__learnMore-lineWrap"><div class="header__learnMore-line"></div></div>
                 <a href="#" class="header__learnMore-link"><div class="header__learnMore-circle">></div></a>
             </div>
-            <div class="header__scroll">scroll to discover more</div>
+            <a href="#services" class="header__scroll">scroll to discover more</a>
         </div>
     </header>
-    <section class="section services">
+    <section class="section services" id="services">
         <div class="services-inner">
             <div class="services__box house">
                 <img src="img/house-icon.png" alt="house" class="services__box-icon">
                 <h3 class="services__box-title">House cleaning</h3>
                 <p class="services__box-text">Sparcle provides a professional house cleaning service dedicated to making the lives of our clients safer, greener and cleaner.</p>
-                <a href="#" class="services__box-booking">Book on-line now</a>
+                <a href="#booking" class="services__box-booking">Book on-line now</a>
             </div>
             <div class="services__box commercial">
                 <img src="img/commercial.png" alt="commercial" class="services__box-icon">
@@ -56,7 +56,7 @@
             </div>
         </div>
     </section>
-    <section class="section about">
+    <section class="section about" id="about">
         <div class="about-inner">
         <h2 class="about__title">A new way of cleaning</h2>
         <div class="about__text">
@@ -88,7 +88,126 @@
             <img src="img/hand.png" alt="" class="hand">
         </div>
     </section>
-    <section class="section"></section>
-    <footer class="footer"></footer>
+    <section class="section booking" id="booking">
+        <div class="booking-inner">
+
+            <div class="booking__box selection">
+                <p class="philosophy_subtitle">Select your service</p>
+                <h3 class="booking__box-title">Book on-line</h3>
+                <p class="booking__box-text">Choose the type of cleaning that suits you the most. After that you just have to specify number of rooms and you are good to go.</p>
+                <h4 class="booking__subtitle">Type of cleaning</h4>
+                <div class="typeCleaningBtns">
+                    <button class="residentialBtn btn">Residential</button>
+                    <button class="commercialBtn btn">Commercial</button>
+                </div>
+                <div class="countContainer">
+
+                <div class="bedrooms">
+                    <p class="counter__name">Number of bedrooms</p>
+                    <div class="counter">
+                        <button class="counter__decrement">-</button>
+                        <span class="counter__value">4</span>
+                        <button class="counter__increment">+</button>
+                    </div>
+                </div>
+                <div class="bathrooms">
+                    <p class="counter__name">Number of bathrooms</p>
+                    <div class="counter">                    
+                        <button class="counter__decrement">-</button>
+                        <span class="counter__value">2</span>
+                        <button class="counter__increment">+</button>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+            <div class="booking__box subtotal">
+                <h3 class="booking__box-title">Subtotal <span>130,00 $</span></h3>
+
+                
+                <p class="booking__box-text">Residential Cleaning - <span class="hours">5 hours</span></p>
+                <p class="booking__box-text">Includes: <span>4</span> bedrooms, <span>2</span> bathrooms</p>
+                <div class="booking_box-form">
+                    <div><p class="philosophy_subtitle">Your full name</p>
+                    <input type="text" placeholder="Enter your full name" class="input">
+                </div>
+                    <input type="tel" placeholder="Enter your phone number" class="input">
+                    <input type="email" placeholder="Enter your email addresse" class="input">
+                    
+                </div>
+                <a href="#" class="booking__box-link">Continue Booking    ></a>
+            </div>
+        </div>
+    </section>
+    <section class="section testimonials" id="testimonials">
+        <div class="testimonials-inner">
+            <h2 class="testimonials__title">What our customers say</h2>
+            <div class="testimonialsContainer">
+                <div class="testimonials__item">
+                    <img src="img/photo-1562185022-c0a7889d7fbb.png" alt="user">
+                    <p class="testimonials__item-text">“There is no better feeling than walking into a super clean home, and knowing that someone else took time to do it :)”</p>
+                    <p class="testimonials__item-name">Paula Radanović</p>
+                    <p class="testimonials__item-city">Zagreb</p>
+                </div>
+                <div class="testimonials__item">
+                    <img src="img/photo-1456885284447-7dd4bb8720bf.png" alt="user">
+                    <p class="testimonials__item-text">“Super fast hard workers! Polite and friendly! Highly recommend the odd jobers if you need a job done fast and done right!”</p>
+                    <p class="testimonials__item-name">Kristina Rašić</p>
+                    <p class="testimonials__item-city">Samobor</p>
+                </div>
+                <div class="testimonials__item">
+                    <img src="img/photo-1520813792240-56fc4a3765a7.png" alt="user">
+                    <p class="testimonials__item-text">“They absolutely make my life better! So professional and organized. They have a checklist for what is cleaned so that you know that it will be the same deep, thorough cleaning every time.”</p>
+                    <p class="testimonials__item-name">Anamarija Benković</p>
+                    <p class="testimonials__item-city">Osijec</p>
+                </div>
+            </div>
+            <div class="testimonials__comments">
+                <h3 class="testimonials__comments-title">Your questions and comments are important for us.</h3>
+                <div class="testimonials__comments-btns">
+                    <button class="residentialBtn btn">Call our service</button>
+                    <button class="commercialBtn btn">Email us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="footer-inner">
+            <div class="footer__column">
+                <h2 class="footer__column-title">Sparcle.</h2>
+                <p class="footer__column-paragraph">Enjoy a better cleaning experience with us</p>
+                <div class="socials">
+                    <img src="img/facebook.png" alt="facebook" class="socials__item">
+                    <img src="img/twitter.png" alt="twitter" class="socials__item">
+                    <img src="img/linkedin.png" alt="linkedin" class="socials__item">
+                </div>
+            </div>
+            <div class="footer__column">
+                <h2 class="footer__column-title">House</h2>
+                <p class="footer__column-paragraph">What's Included</p>
+                <p class="footer__column-paragraph">Speciality Cleaning</p>
+                <p class="footer__column-paragraph">Deep Cleaning</p>
+                <p class="footer__column-paragraph">Careers</p>
+            </div>
+            <div class="footer__column">
+                <h2 class="footer__column-title">Commercial</h2>
+                <p class="footer__column-paragraph">Green Cleaning</p>
+                <p class="footer__column-paragraph">Secure Daytime Cleaning</p>
+                <p class="footer__column-paragraph">Apartament Cleaning</p>
+                <p class="footer__column-paragraph">Event Cleaning</p>
+            </div>
+            <div class="footer__column">
+                <h2 class="footer__column-title">Contact</h2>
+                <p class="footer__column-paragraph">Borongajska cesta bb</p>
+                <p class="footer__column-paragraph">10000 Zagreb</p>
+                <p class="footer__column-paragraph">01 23 95 313</p>
+                <p class="footer__column-paragraph email">hello@sparcle.co</p>
+            </div>
+        </div>
+        <div class="copyright"><p>Copyright Sparcle. Team d.o.o., All Rights Reserved</p></div>
+    </footer>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -9,165 +9,173 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="container">
-            <div class="top">
-                <img src="img/sparcleLogo.png" alt="logo" class="header__logo">
-                <nav class="header__menu">
-                    <a href="#services" class="header__menu-item">Our services</a>
-                    <a href="#about" class="header__menu-item">Why hire us</a>
-                    <a href="#booking" class="header__menu-item">Booking</a>
-                    <a href="#testimonials" class="header__menu-item">Testimonials</a>
-                    <a href="#footer" class="header__menu-item">Contact</a>
+        <div class="header__inner">
+            
+            <div class="header__top">
+                <img src="img/sparcleLogo.png" alt="logo" class="logo">
+                <nav class="menu">
+                    <a href="#services" class="menu__item">Our services</a>
+                    <a href="#about" class="menu__item">Why hire us</a>
+                    <a href="#booking" class="menu__item">Booking</a>
+                    <a href="#testimonials" class="menu__item">Testimonials</a>
+                    <a href="#footer" class="menu__item">Contact</a>
                 </nav>
-                <button class="header__request btn">Request a Quote</button>
+                <button class="btn btn-light">Request a Quote</button>
             </div>
 
             <div class="header__text">
-                <h1 class="header__text-title">Professional cleaning services</h1>
-                <p class="header__text-paragraph">Enjoy a better house cleaning experience. All of our cleaners are stringently vetted and have their cleaning ability fully tested.</p>
+                <h1 class="headline">Professional cleaning services</h1>
+                <p class="paragraph">Enjoy a better house cleaning experience. All of our cleaners are stringently vetted and have their cleaning ability fully tested.</p>
             </div>
 
             <div class="header__btns">
-                <button class="get-started btn">Get started</button>
-                <button class="location btn" id="location-btn"><img src="img/location-icon.png" alt="location" class="location-icon" id="location-icon">Locations</button>
+                <button class="btn btn-light">Get started</button>
+                <button class="btn btn-light" id="location-btn"><img src="img/location-icon.png" alt="location" class="location-icon" id="location-icon">Locations</button>
             </div>
 
-            <div class="header__learnMore">
-                <p class="header__learnMore-text">learn more</p>
-                <div class="header__learnMore-lineWrap"><div class="header__learnMore-line"></div></div>
-                <a href="#" class="header__learnMore-link"><div class="header__learnMore-circle">></div></a>
+            <div class="learnMore">
+                <p class="learnMore__caption">learn more</p>
+                <div class="learnMore__arrow">
+                    <div class="learnMore__arrow-line"></div>
+                    <a href="#" class="learnMore__arrow-link">
+                        <div class="learnMore__arrow-circle">></div>
+                    </a>
+                </div>
             </div>
+
             <a href="#services" class="header__scroll">scroll to discover more</a>
         </div>
     </header>
     <section class="section services" id="services">
-        <div class="services-inner">
-            <div class="services__box house">
-                <img src="img/house-icon.png" alt="house" class="services__box-icon">
-                <h3 class="services__box-title">House cleaning</h3>
-                <p class="services__box-text">Sparcle provides a professional house cleaning service dedicated to making the lives of our clients safer, greener and cleaner.</p>
-                <a href="#booking" class="services__box-booking">Book on-line now</a>
+        <div class="section__inner">
+            <div class="serviceBox serviceBox-house">
+                <img src="img/house-icon.png" alt="house" class="serviceBox__icon">
+                <h3 class="subtitle">House cleaning</h3>
+                <p class="article">Sparcle provides a professional house cleaning service dedicated to making the lives of our clients safer, greener and cleaner.</p>
+                <a href="#booking" class="link">Book on-line now</a>
             </div>
-            <div class="services__box commercial">
-                <img src="img/commercial.png" alt="commercial" class="services__box-icon">
-                <h3 class="services__box-title">Commercial cleaning</h3>
-                <p class="services__box-text">Sparcle provides a professional office cleaning service dedicated to making the lives of our clients safer, greener and cleaner.</p>
-                <a href="#" class="services__box-booking">Get a quote</a>
+            <div class="serviceBox serviceBox-commercial">
+                <img src="img/commercial.png" alt="commercial" class="serviceBox__icon">
+                <h3 class="subtitle">Commercial cleaning</h3>
+                <p class="article">Sparcle provides a professional office cleaning service dedicated to making the lives of our clients safer, greener and cleaner.</p>
+                <a href="#" class="link">Get a quote</a>
             </div>
         </div>
     </section>
+
     <section class="section about" id="about">
-        <div class="about-inner">
-        <h2 class="about__title">A new way of cleaning</h2>
-        <div class="about__text">
-            <div class="about__text-item"><p class="about__paragraph">We clean to such a high level that you’ll never even need to use oue unique re-clean guarantee! <span class="underline-text bold-text">This gives you peace of mind and saves you time.</span> </p></div>
-        <div class="about__text-item"><p class="about__paragraph">We love house cleaning and want to share with you its many benefits. Having our house cleaning services is about having the utmost professional people in your home, people you can trust and count on.</p>
-            <p class="about__paragraph">When you choose <span class="bold-text">Sparcle</span>, you know you will be coming home with the peace of mind that only all natural cleaning products were used, making your home safe for your family, your pets and the planet.</p></div>
+        <div class="section__inner">
+            <h2 class="title">A new way of cleaning</h2>
+            <div class="about__text">
+                <div class="about__column">
+                    <p class="article">We clean to such a high level that you’ll never even need to use oue unique re-clean guarantee! <span class="article-underline article-bold">This gives you peace of mind and saves you time.</span></p>
+                </div>
+                <div class="about__column">
+                    <p class="article">We love house cleaning and want to share with you its many benefits. Having our house cleaning services is about having the utmost professional people in your home, people you can trust and count on.</p>
+                    <p class="article">When you choose <span class="article-bold">Sparcle</span>, you know you will be coming home with the peace of mind that only all natural cleaning products were used, making your home safe for your family, your pets and the planet.</p>
+                </div>
+            </div>
         </div>
-        <img src="img/bg-small.png" alt="" class="bg-small">
-        <img src="img/dots.png" alt="" class="dots">
-        
-    </div>
-    
+        <img src="img/bg-small.png" alt="photo" class="bg-small">
+        <img src="img/dots.png" alt="dots" class="dots">
     </section>
+
     <section class="section philosophy">
-        <div class="philosophy-inner">
-            <p class="philosophy_subtitle">Become part of the team</p>
-            <h2 class="about__title">Professional cleaning service of the year</h2>
-            <p class="about__paragraph">At <span class="bold-text">Sparcle</span> our entire philosophy is based on hiring warm people, not warm bodies. We know that you only want the best.</p>
-            <div class="philosophy__guarantees">
-                <div class="philosophy__guarantees-item">
-                    <img src="img/check-icon.png" alt="" class="check-icon">
+        <div class="section__inner">
+            <h4 class="caption">Become part of the team</h4>
+            <h2 class="title">Professional cleaning service of the year</h2>
+            <p class="article">At <span class="article-bold">Sparcle</span> our entire philosophy is based on hiring warm people, not warm bodies. We know that you only want the best.</p>
+            <div class="guarantees">
+                <div class="guarantee__wrap">
+                    <img src="img/check-icon.png" alt="" class="icon-check">
                     <p class="guarantee">Satisfaction guaranteed</p>
                 </div>
-                <div class="philosophy__guarantees-item">
-                    <img src="img/check-icon.png" alt="check" class="check-icon">
+                <div class="guarantee__wrap">
+                    <img src="img/check-icon.png" alt="check" class="icon-check">
                     <p class="guarantee">Above average incomes</p>
                 </div>
             </div>
-            <img src="img/hand.png" alt="" class="hand">
         </div>
+        <img src="img/hand.png" alt="" class="hand">
     </section>
+
     <section class="section booking" id="booking">
-        <div class="booking-inner">
-
+        <div class="section__inner">
             <div class="booking__box selection">
-                <p class="philosophy_subtitle">Select your service</p>
-                <h3 class="booking__box-title">Book on-line</h3>
-                <p class="booking__box-text">Choose the type of cleaning that suits you the most. After that you just have to specify number of rooms and you are good to go.</p>
-                <h4 class="booking__subtitle">Type of cleaning</h4>
-                <div class="typeCleaningBtns">
-                    <button class="residentialBtn btn">Residential</button>
-                    <button class="commercialBtn btn">Commercial</button>
+                <h4 class="caption">Select your service</h4>
+                <h2 class="title">Book on-line</h2>
+                <p class="article article-dark">Choose the type of cleaning that suits you the most. After that you just have to specify number of rooms and you are good to go.</p>
+                
+                <p class="article article-bold article-highlighted">Type of cleaning</p>
+                <div class="selection__btns">
+                    <button class="btn btn-dark">Residential</button>
+                    <button class="btn btn-dark">Commercial</button>
                 </div>
-                <div class="countContainer">
-
-                <div class="bedrooms">
-                    <p class="counter__name">Number of bedrooms</p>
-                    <div class="counter">
-                        <button class="counter__decrement">-</button>
-                        <span class="counter__value">4</span>
-                        <button class="counter__increment">+</button>
+                <div class="counter">
+                    <div class="counter__inner">
+                        <p class="article article-bold article-highlighted">Number of bedrooms</p>
+                        <div class="counter__item">
+                            <button class="btn-round btn-dark">-</button>
+                            <span class="counter__value">4</span>
+                            <button class="btn-round btn-dark">+</button>
+                        </div>
                     </div>
-                </div>
-                <div class="bathrooms">
-                    <p class="counter__name">Number of bathrooms</p>
-                    <div class="counter">                    
-                        <button class="counter__decrement">-</button>
-                        <span class="counter__value">2</span>
-                        <button class="counter__increment">+</button>
+                    <div class="counter__inner">
+                        <p class="article article-bold article-highlighted">Number of bathrooms</p>
+                        <div class="counter__item">                    
+                            <button class="btn-round btn-dark">-</button>
+                            <span class="counter__value">2</span>
+                            <button class="btn-round btn-dark">+</button>
+                        </div>
                     </div>
-
-                </div>
             </div>
 
             </div>
             <div class="booking__box subtotal">
-                <h3 class="booking__box-title">Subtotal <span>130,00 $</span></h3>
-
-                
-                <p class="booking__box-text">Residential Cleaning - <span class="hours">5 hours</span></p>
-                <p class="booking__box-text">Includes: <span>4</span> bedrooms, <span>2</span> bathrooms</p>
-                <div class="booking_box-form">
-                    <div><p class="philosophy_subtitle">Your full name</p>
-                    <input type="text" placeholder="Enter your full name" class="input">
-                </div>
+                <h3 class="title-light">Subtotal <span>130,00 $</span></h3>
+                <p class="article">Residential Cleaning - <span class="article-highlighted">5 hours</span></p>
+                <p class="article">Includes: <span>4</span> bedrooms, <span>2</span> bathrooms</p>
+                <div class="subtotal__form">
+                    <div>
+                        <h4 class="caption">Your full name</h4>
+                        <input type="text" placeholder="Enter your full name" class="input">
+                    </div>
                     <input type="tel" placeholder="Enter your phone number" class="input">
                     <input type="email" placeholder="Enter your email addresse" class="input">
                     
                 </div>
-                <a href="#" class="booking__box-link">Continue Booking    ></a>
+                <a href="#" class="subtotal__link">Continue Booking ></a>
             </div>
         </div>
     </section>
     <section class="section testimonials" id="testimonials">
-        <div class="testimonials-inner">
-            <h2 class="testimonials__title">What our customers say</h2>
-            <div class="testimonialsContainer">
-                <div class="testimonials__item">
+        <div class="section__inner">
+            <h2 class="title">What our customers say</h2>
+            <div class="feedback__wrap">
+                <div class="feedback">
                     <img src="img/photo-1562185022-c0a7889d7fbb.png" alt="user">
-                    <p class="testimonials__item-text">“There is no better feeling than walking into a super clean home, and knowing that someone else took time to do it :)”</p>
-                    <p class="testimonials__item-name">Paula Radanović</p>
-                    <p class="testimonials__item-city">Zagreb</p>
+                    <p class="feedback_text">“There is no better feeling than walking into a super clean home, and knowing that someone else took time to do it :)”</p>
+                    <p class="feedback_name">Paula Radanović</p>
+                    <p class="feedback_city">Zagreb</p>
                 </div>
-                <div class="testimonials__item">
+                <div class="feedback">
                     <img src="img/photo-1456885284447-7dd4bb8720bf.png" alt="user">
-                    <p class="testimonials__item-text">“Super fast hard workers! Polite and friendly! Highly recommend the odd jobers if you need a job done fast and done right!”</p>
-                    <p class="testimonials__item-name">Kristina Rašić</p>
-                    <p class="testimonials__item-city">Samobor</p>
+                    <p class="feedback_text">“Super fast hard workers! Polite and friendly! Highly recommend the odd jobers if you need a job done fast and done right!”</p>
+                    <p class="feedback_name">Kristina Rašić</p>
+                    <p class="feedback_city">Samobor</p>
                 </div>
-                <div class="testimonials__item">
+                <div class="feedback">
                     <img src="img/photo-1520813792240-56fc4a3765a7.png" alt="user">
-                    <p class="testimonials__item-text">“They absolutely make my life better! So professional and organized. They have a checklist for what is cleaned so that you know that it will be the same deep, thorough cleaning every time.”</p>
-                    <p class="testimonials__item-name">Anamarija Benković</p>
-                    <p class="testimonials__item-city">Osijec</p>
+                    <p class="feedback_text">“They absolutely make my life better! So professional and organized. They have a checklist for what is cleaned so that you know that it will be the same deep, thorough cleaning every time.”</p>
+                    <p class="feedback_name">Anamarija Benković</p>
+                    <p class="feedback_city">Osijec</p>
                 </div>
             </div>
-            <div class="testimonials__comments">
-                <h3 class="testimonials__comments-title">Your questions and comments are important for us.</h3>
-                <div class="testimonials__comments-btns">
-                    <button class="residentialBtn btn">Call our service</button>
-                    <button class="commercialBtn btn">Email us</button>
+            <div class="leaveFeedback">
+                <h3 class="subtitle">Your questions and comments are important for us.</h3>
+                <div class="leaveFeedback__btns">
+                    <button class="btn btn-dark">Call our service</button>
+                    <button class="btn btn-dark">Email us</button>
                 </div>
             </div>
         </div>
@@ -175,39 +183,42 @@
     <footer class="footer" id="footer">
         <div class="footer-inner">
             <div class="footer__column">
-                <h2 class="footer__column-title">Sparcle.</h2>
-                <p class="footer__column-paragraph">Enjoy a better cleaning experience with us</p>
+                <h2 class="footer__title">Sparcle.</h2>
+                <p class="footer__article slogan">Enjoy a better cleaning experience with us</p>
                 <div class="socials">
-                    <img src="img/facebook.png" alt="facebook" class="socials__item">
-                    <img src="img/twitter.png" alt="twitter" class="socials__item">
-                    <img src="img/linkedin.png" alt="linkedin" class="socials__item">
+                    <a href="#"><img src="img/facebook.png" alt="facebook" class="socials__item"></a>
+                    <a href="#"><img src="img/twitter.png" alt="twitter" class="socials__item"></a>
+                    <a href="#"><img src="img/linkedin.png" alt="linkedin" class="socials__item"></a>
                 </div>
             </div>
             <div class="footer__column">
-                <h2 class="footer__column-title">House</h2>
-                <p class="footer__column-paragraph">What's Included</p>
-                <p class="footer__column-paragraph">Speciality Cleaning</p>
-                <p class="footer__column-paragraph">Deep Cleaning</p>
-                <p class="footer__column-paragraph">Careers</p>
+                <h2 class="footer__title">House</h2>
+                <a href="#" class="footer__link">What's Included</a>
+                <a href="#" class="footer__link">Speciality Cleaning</a>
+                <a href="#" class="footer__link">Deep Cleaning</a>
+                <a href="#" class="footer__link">Careers</a>
             </div>
             <div class="footer__column">
-                <h2 class="footer__column-title">Commercial</h2>
-                <p class="footer__column-paragraph">Green Cleaning</p>
-                <p class="footer__column-paragraph">Secure Daytime Cleaning</p>
-                <p class="footer__column-paragraph">Apartament Cleaning</p>
-                <p class="footer__column-paragraph">Event Cleaning</p>
+                <h2 class="footer__title">Commercial</h2>
+                <a href="#" class="footer__link">Green Cleaning</a>
+                <a href="#" class="footer__link">Secure Daytime Cleaning</a>
+                <a href="#" class="footer__link">Apartament Cleaning</a>
+                <a href="#" class="footer__link">Event Cleaning</a>
             </div>
             <div class="footer__column">
-                <h2 class="footer__column-title">Contact</h2>
-                <p class="footer__column-paragraph">Borongajska cesta bb</p>
-                <p class="footer__column-paragraph">10000 Zagreb</p>
-                <p class="footer__column-paragraph">01 23 95 313</p>
-                <p class="footer__column-paragraph email">hello@sparcle.co</p>
+                <h2 class="footer__title">Contact</h2>
+                <p class="footer__article">Borongajska cesta bb</p>
+                <p class="footer__article">10000 Zagreb</p>
+                <p class="footer__article">01 23 95 313</p>
+                <p class="footer__article email">hello@sparcle.co</p>
             </div>
         </div>
-        <div class="copyright"><p>Copyright Sparcle. Team d.o.o., All Rights Reserved</p></div>
+        <div class="copyright">
+            <p>Copyright Sparcle. Team d.o.o., All Rights Reserved</p>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
     </footer>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    
     <script src="script.js"></script>
 </body>
 </html>

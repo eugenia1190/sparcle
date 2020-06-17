@@ -42,6 +42,11 @@
     /* margin-bottom: 50px; */
 }
 
+.menu-mobile
+{
+    display: none;
+}
+
 .menu
 {
     display: flex;
@@ -1055,4 +1060,148 @@
     {
         width: 24px;
     }
+}
+
+@media (max-width: 480px)
+{
+    .menu,
+    .header__top .btn
+    {
+        display: none;
+    }
+
+    .menu-mobile
+    {
+        display: block;
+    }
+
+    .menu__item-mobile
+    {
+        display: block;
+        width: 25px;
+        height: 3px;
+        border-bottom: 3px solid #F45E1F;
+    }
+
+    .header__text
+    {
+        width: 100%;
+    }
+
+    .paragraph
+    {
+    line-height: 1.5;
+    width: 70%;
+    }
+
+    .header__btns
+    {
+        justify-content: space-evenly;
+        width: 100%;
+
+    }
+
+    .learnMore
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .learnMore__arrow
+    {
+        width: 55%;
+    }
+
+    .services .section__inner,
+    .booking .section__inner
+    {
+        width: 100%;
+    }
+
+    .services .section__inner
+    {
+        flex-direction: column;
+    }
+
+    .serviceBox
+    {
+        width: 50%;
+        min-width: 250px;
+    }
+
+    .philosophy .section__inner
+    {
+        padding-right: 0;
+    }
+
+    .hand
+    {
+        display: none;
+    }
+
+
+    .booking
+    {
+        height: 800px;
+    }
+
+    .booking__box
+    {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .selection
+    {
+        padding: 32px;
+    }
+
+    .selection .article-dark,
+    .selection .article-highlighted
+    {
+        margin-bottom: 15px;
+    }
+
+    .selection__btns
+    {
+        margin-bottom: 20px;
+    }
+
+    .selection__btns,
+    .counter
+    {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .subtotal
+    {
+        min-width: 300px;
+    }
+
+    .feedback
+    {
+        width: 100%;
+        padding: 28px;
+    }
+
+    .leaveFeedback .subtitle
+    {
+        text-align: center;
+    }
+
+    .footer
+    {
+        height: 770px;
+    }
+
+    .footer-inner
+    {
+        flex-direction: column;
+
+        height: 670px;
+        padding: 20px 0;
+    }
+
+
 }

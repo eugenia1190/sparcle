@@ -405,7 +405,7 @@
     position: absolute;
     top: 450px;
     left: 20%;
-    width: 30%;
+    width: 380px;
     z-index: 555;
 }
 
@@ -414,7 +414,7 @@
     position: absolute;
     top: 680px;
     left: 40%;
-    width: 20%;
+    width: 280px;
     z-index: 554;
 }
 
@@ -468,6 +468,7 @@
     right: 0;
     top: 200px;
     width: 40%;
+    max-width: 500px;
 }
 
 .booking
@@ -851,6 +852,17 @@
         padding: 40px;
     }
 
+    .bg-small
+    {
+        width: 300px;
+        top: 480px;
+    }
+
+    .dots
+    {
+        width: 200px;
+    }
+
     .selection
     {
         min-width: 300px;
@@ -953,6 +965,16 @@
         height: 32px;
     }
 
+    .bg-small
+    {
+        width: 250px;
+    }
+
+    .dots
+    {
+        width: 180px;
+        top: 640px;
+    }
     
     .booking
     {
@@ -1133,6 +1155,27 @@
         width: 50%;
         min-width: 250px;
     }
+
+    .philosophy
+    {
+        height: 520px;
+        padding: 250px 0 0 0;
+    }
+
+    .bg-small
+    {
+        width: 190px;
+        top: 490px;
+        left: 10%;
+    }
+
+    .dots
+    {
+        width: 150px;
+        top: 620px;
+        left: 35%;
+    }
+    
 
     .philosophy .section__inner
     {

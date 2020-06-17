@@ -22,6 +22,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
+    min-height: 600px;
 }
 
 .header__inner
@@ -38,7 +39,7 @@
     justify-content: space-between;
 
     width: 100%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .menu
@@ -63,7 +64,7 @@
     display: flex;
     align-items: center;
 
-    height: 50px;
+    height: 47px;
 
     cursor: pointer;
 }
@@ -119,12 +120,11 @@
 }
 
 .header__text
-
 {
     color: #FFF;
 
     width:  80%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .headline
@@ -140,6 +140,7 @@
     font-size: 1.25em;
 
     width: 47%;
+    margin-bottom: 50px;
 }
 
 .header__btns
@@ -147,8 +148,9 @@
     display: flex ;
     justify-content: space-between;
     
-    width: 30%;
-    margin-bottom: 50px;
+    width: 40%;
+    min-width: 340px;
+    /* margin-bottom: 50px; */
 }
 
 .location
@@ -221,6 +223,15 @@
     text-decoration: none;
 }
 
+.header__content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: calc(100% - 85px);
+    max-height: 800px;
+}
+
 .header__scroll
 {
     font-size: 1em;
@@ -251,6 +262,7 @@
 .section__inner
 {
     width: 75%;
+    max-width: 1200px;
 }
 
 .title
@@ -380,7 +392,7 @@
 {
     position: absolute;
     top: 450px;
-    left: 250px;
+    left: 20%;
     width: 30%;
     z-index: 555;
 }
@@ -389,7 +401,7 @@
 {
     position: absolute;
     top: 680px;
-    left: 480px;
+    left: 40%;
     width: 20%;
     z-index: 554;
 }
@@ -462,9 +474,8 @@
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     
-    width: 500px;
+    width: 50%;
     height: 500px;
 
     box-sizing: border-box;
@@ -472,7 +483,9 @@
 
 .selection
 {
-    padding-right: 150px;
+    justify-content: flex-start;
+    width: 30%;
+    min-width: 350px;
 }
 
 .selection .article-dark
@@ -532,6 +545,8 @@
 
 .subtotal
 {
+    justify-content: center;
+    
     background-color: #273164;
     padding: 50px;
 }
@@ -566,7 +581,7 @@
     font-size: 1.16em;
     color: #FFF;
 
-    width: 360px;
+    width: 100%;
     height: 25px;
     background-color: transparent;
     border: none;
@@ -664,6 +679,7 @@
     display: flex;
     justify-content: space-between;
     width: 35%;
+    min-width: 350px;
 }
 
 .footer
@@ -675,16 +691,18 @@
 
     height: 530px;
 }
+
 .footer-inner
 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 75%;
-    padding-top: 160px;
-    margin-bottom: 50px;
+    max-width: 1200px;
+    padding: 100px 0;
     box-sizing: border-box;
 }
+
 .footer__column
 {
     width: 17%;
@@ -756,5 +774,278 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 75%;
+    max-width: 1200px;
     border-top: 1px solid #c1c1c1;
+}
+
+
+@media (max-width: 1200px)
+{
+    .body
+    {
+        font-size: 10px;
+    }
+
+    .menu
+    {
+        height: 40px;
+    }
+
+    .menu__item
+    {
+        height: 37px;
+    }
+
+    .btn
+    {
+        height: 40px;
+        width: 142px;
+
+        border-radius: 40px;
+    }
+
+    .header__btns
+    {
+        min-width: 300px;
+    }
+
+    .learnMore__arrow
+    {
+        height: 40px;
+    }
+
+    .learnMore__arrow-line
+    {
+        height: 20px;
+    }
+
+    .learnMore__arrow-circle
+    {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 40px;
+    }
+
+    .header__scroll
+    {
+        height: 38px;
+    }
+
+    .serviceBox
+    {
+        height: 280px;
+        width: 280px;
+        padding: 40px;
+    }
+
+    .selection
+    {
+        min-width: 300px;
+    }
+
+    .btn-round
+    {
+        width: 28px;
+        height: 28px;
+        border-radius: 28px;
+    }
+
+    .feedback
+    {
+        width: 32%;
+        height: 350px;
+        padding: 38px;
+        margin-bottom: 150px;
+        box-sizing: border-box;
+
+        background-color: #FFF;
+    }
+
+    .leaveFeedback__btns
+    {
+        min-width: 300px;
+    }
+
+    .footer
+    {
+        height: 430px;
+    }
+
+    .footer-inner
+    {
+        padding: 70px 0;
+    }
+
+    .footer .slogan
+    {
+        margin-bottom: 20px;
+    }
+
+    .socials__item
+    {
+        width: 28px;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .body
+    {
+        font-size: 8px;
+    }
+
+    .menu
+    {
+        height: 35px;
+    }
+
+    .menu__item
+    {
+        height: 32px;
+    }
+
+    .btn
+    {
+        height: 35px;
+        width: 112px;
+
+        border-radius: 35px;
+    }
+
+    .header__btns
+    {
+        min-width: 240px;
+    }
+
+    .learnMore__arrow
+    {
+        height: 35px;
+    }
+
+    .learnMore__arrow-line
+    {
+        height: 17.5px;
+    }
+
+    .learnMore__arrow-circle
+    {
+        width: 35px;
+        height: 35px;
+
+        border-radius: 35px;
+    }
+
+    .header__scroll
+    {
+        height: 32px;
+    }
+
+    
+    .booking
+    {
+        height: 1000px;
+    }
+
+    .booking .section__inner
+    {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .serviceBox
+    {
+        height: 250px;
+        width: 40%;
+        min-width: 200px;
+        padding: 32px;
+    }
+
+    .booking__box
+    {
+        height: 400px;
+    }
+
+    .selection
+    {
+        min-width: 240px;
+    }
+
+    .btn-round
+    {
+        width: 24px;
+        height: 24px;
+        border-radius: 24px;
+    }
+
+    .subtotal
+    {
+        min-width: 360px;
+        padding: 32px;
+    } 
+
+    .testimonials
+    {
+        height: 1150px;
+    }
+
+    .testimonials .title
+    {
+        margin-bottom: 40px;
+    }
+
+    .feedback__wrap
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 800px;
+        margin-bottom: 40px;
+    }
+
+    .feedback
+    {
+        width: 350px;
+
+        height: 240px;
+        padding: 32px;
+        margin: 0;
+    }
+
+    .leaveFeedback .subtitle
+    {
+        margin-bottom: 25px;
+    }
+
+    .leaveFeedback__btns
+    {
+        min-width: 250px;
+    }
+
+    .footer
+    {
+        height: 330px;
+    }
+
+    .footer-inner
+    {
+        padding: 50px 0;
+    }
+
+    .footer__column
+    {
+        width: 17%;
+        min-width: 97px;
+    }
+
+    .footer .slogan
+    {
+        margin-bottom: 15px;
+    }
+
+    .socials__item
+    {
+        width: 24px;
+    }
 }

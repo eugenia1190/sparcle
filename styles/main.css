@@ -153,6 +153,13 @@
     /* margin-bottom: 50px; */
 }
 
+#location-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .location
 {
     display: flex;

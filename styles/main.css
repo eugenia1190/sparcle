@@ -1084,11 +1084,175 @@
     }
 }
 
+@media(max-width: 992px) and (max-height: 500px)
+{
+    .body
+    {
+        font-size: 6px;
+    }
+
+    .header
+    {
+        min-height: 320px;
+        padding-top: 20px;
+    }
+
+    .menu,
+    .header__top .btn
+    {
+        display: none;
+    }
+
+    .logo
+    {
+        width:80px;
+    }
+
+    .menu-mobile
+    {
+        display: block;
+    }
+
+    .menu__item-mobile
+    {
+        display: block;
+        width: 25px;
+        height: 3px;
+        border-bottom: 3px solid #F45E1F;
+    }
+
+    .header__content
+    {
+        height: calc(100% - 65px);
+    }
+
+    .paragraph
+    {
+        margin-bottom: 20px;
+    }
+
+    .btn
+    {
+        height: 28px;
+        width: 100px;
+        border-radius: 28px;
+    }
+
+    .header__btns
+    {
+        min-width: 210px;
+    }
+
+    .learnMore__arrow
+    {
+        height: 28px;
+    }
+
+    .learnMore__arrow-line
+    {
+        height: 14px;
+    }
+
+    .learnMore__arrow-circle
+    {
+        width: 28px;
+        height: 28px;
+        border-radius: 28px;
+    }
+
+    .header__scroll
+    {
+        height: 28px;
+    }
+
+    .services
+    {
+        height: 380px;
+    }
+
+    .serviceBox
+    {
+        height: 200px;
+    }
+
+    .about
+    {
+        height: 350px;
+    }
+
+    .philosophy {
+        height: 550px;
+        padding: 300px 0 0 0;
+    }
+
+    .bg-small
+    {
+        width: 230px;
+        top: 310px;
+        left: 12%;
+    }
+
+    .dots
+    {
+        width: 180px;
+        top: 470px;
+    }
+
+    .booking
+    {
+        height: 700px;
+    }
+
+    .booking__box
+    {
+        height: 275px;
+    }
+
+    .selection .article-dark
+    {
+        margin-bottom: 30px;
+    }
+
+    .selection__btns
+    {
+        max-width: 220px;
+        margin-bottom: 30px;
+    }
+
+    .counter
+    {
+        max-width: 220px;
+    }
+
+    .subtotal__form
+    {
+        height: 150px;
+    }
+
+    .leaveFeedback__btns
+    {
+        min-width: 220px;
+    }
+
+    .footer__column {
+        width: 15%;
+        min-width: 90px;
+    }
+
+    .socials__item {
+        width: 20px;
+    }
+
+
+}
+
 @media (max-width: 480px)
 {
     .header
     {
         min-height: 500px;
+
+        background-position-x: 47%;
     }
 
     .menu,

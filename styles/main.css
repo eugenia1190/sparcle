@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
 
+    min-width: 700px;
     margin: 0;
 }
 
@@ -791,6 +792,34 @@
     border-top: 1px solid #c1c1c1;
 }
 
+@media (min-width: 1800px)
+{
+    .philosophy .section__inner
+    {
+        padding-right: 0;
+    }
+
+    .hand
+    {
+        display: none;
+    }
+
+    .about .section__inner
+    {
+        position: relative;
+    }
+
+    .bg-small
+    {
+        left: 5%;
+    }
+
+    .dots
+    {
+        left: 25%;
+    }
+}
+
 
 @media (max-width: 1200px)
 {
@@ -917,6 +946,7 @@
     .body
     {
         font-size: 8px;
+        min-width: 330px;
     }
 
     .menu
@@ -1234,16 +1264,16 @@
         min-width: 220px;
     }
 
-    .footer__column {
+    .footer__column
+    {
         width: 15%;
         min-width: 90px;
     }
 
-    .socials__item {
+    .socials__item
+    {
         width: 20px;
     }
-
-
 }
 
 @media (max-width: 480px)
@@ -1414,6 +1444,4 @@
         height: 670px;
         padding: 20px 0;
     }
-
-
 }
